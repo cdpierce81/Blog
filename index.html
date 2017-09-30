@@ -3,8 +3,10 @@
     <head>
         <meta charset = "utf-8">
         <title>Project: Blog</title>
+
 		<link rel = "stylesheet" type = "text/css" href = "blog.css">
-	</head>
+    </head>
+
     <body>
         
         <h1 id = "blog">Danielle's blog</h1>
@@ -111,23 +113,5 @@
 		<br>
 		<br>
 		<a href = "#blog"><em>back to top</em></a>
-		<p align="center"><!--This draws the Canvas on the webpage --><canvas id="mycanvas"></canvas> 
-		</p>
-	    </body>
-		<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
-		<script>
-			var sketchProc = function(processingInstance) {
-				with (processingInstance) {
-				size(400, 400); 
-				frameRate(30);
-        
-				// ProgramCodeGoesHere
-				
-			}};
-
-			// Get the canvas that Processing-js will use
-			var canvas = document.getElementById("mycanvas"); 
-			// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
-			var processingInstance = new Processing(canvas, sketchProc); 
-	</script>
+	</body>
 </html>
