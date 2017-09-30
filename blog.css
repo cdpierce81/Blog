@@ -1,0 +1,60 @@
+			body {
+				background-color: rgb(100, 100, 10);
+				font-family: cursive;
+				font-size: 15px;
+			}
+			.displayed {
+				display: block;
+				margin: auto;
+				border: 15px ridge rgb(150, 200, 100);
+			}
+			@keyframes blink {
+				50% {border-color: yellow;}
+			}
+			.displayed {
+				animation-name: blink;
+				animation-duration: .5s;
+				animation-timing-function: step-end;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			h1 {
+				background: black;
+				text-align: center;
+				color: green;
+			}
+			.first {
+				text-align: center;
+			}
+			h6 {
+				text-align: center;
+				color: green;
+			}
+			h2 {
+				text-align: center;
+				color: green;
+			}
+			.java {
+				display: block;
+				margin: auto;
+				border: 15px ridge rgb(255, 200, 50);
+			}
+			#java {
+				background: rgb(230, 200, 50);
+			}
+			#stuck {
+				background: orange;
+			}
+			#again {
+				background: white;
+			}
+			#progress {
+				background: rgb(160, 80, 40);
+			}
+			p {
+				color: rgb(200, 170, 20);
+			}
+			.js {
+				display: inline;
+				margin-left: 525px;
+			}

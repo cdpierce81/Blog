@@ -3,52 +3,17 @@
     <head>
         <meta charset = "utf-8">
         <title>Project: Blog</title>
-		<style>
-			body {
-				background-color: rgb(100, 100, 10);
-				font-family: cursive;
-				font-size: 15px;
-			}
-			h1 {
-				background: black;
-				text-align: center;
-				color: green;
-			}
-			h6 {
-				text-align: center;
-				color: green;
-			}
-			h2 {
-				text-align: center;
-				color: green;
-			}
-			#java {
-				background: rgb(230, 200, 50);
-			}
-			#stuck {
-				background: orange;
-			}
-			#again {
-				background: white;
-			}
-			#progress {
-				background: rgb(160, 80, 40);
-			}
-			p {
-				color: rgb(200, 170, 20);
-			}
-			
-		</style>
-    </head>
+		<link rel = "stylesheet" type = "text/css" href = "blog.css">
+	</head>
     <body>
         
         <h1 id = "blog">Danielle's blog</h1>
 		<h6>Posted on September 1, 2017</h6>
 		<br>
-		<p>This is my <strong><em>FIRST</em></strong> blog and I am very excited about it! <br>
+		<p class = "first">This is my <strong><em>FIRST</em></strong> blog and I am very excited about it! I started coding a year
+		ago and have come <em>really</em> far, so check out my journey...</p><br>
 		<br>
-		I started coding a year ago and have come <em>really</em> far, so check out my journey...</p>
-		<img src = "https://upload.wikimedia.org/wikipedia/en/6/6f/Yoda_Attack_of_the_Clones.png">
+		<img class = "displayed" src = "https://upload.wikimedia.org/wikipedia/en/6/6f/Yoda_Attack_of_the_Clones.png">
 		<br>
 		<br>
 		<br>
@@ -63,7 +28,7 @@
 		<br>
 		<br>
         <h2 id = "java">First, there was JavaScript!!</h2>
-		<img src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" width = "350">
+		<img class = "java" src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" width = "350">
         <br>
 		<br>	
         <p>I actually started coding with JavaScript in the summer of 2015, so <em>technically</em>, it has 
@@ -139,12 +104,30 @@
 		<br>
 		<br>
 		<br>
-		<img src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" width = "200">
-		<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png">
-		<img src = "https://upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg" width = "250">
+		<img class = "js" src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png" width = "200">
+		<img class = "html" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/200px-HTML5_logo_and_wordmark.svg.png">
+		<img class = "css" src = "https://upload.wikimedia.org/wikipedia/commons/5/52/Class-header-css3.jpg" width = "250">
 		<br>
 		<br>
 		<br>
 		<a href = "#blog"><em>back to top</em></a>
-    </body>
+		<p align="center"><!--This draws the Canvas on the webpage --><canvas id="mycanvas"></canvas> 
+		</p>
+	    </body>
+		<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+		<script>
+			var sketchProc = function(processingInstance) {
+				with (processingInstance) {
+				size(400, 400); 
+				frameRate(30);
+        
+				// ProgramCodeGoesHere
+				
+			}};
+
+			// Get the canvas that Processing-js will use
+			var canvas = document.getElementById("mycanvas"); 
+			// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+			var processingInstance = new Processing(canvas, sketchProc); 
+	</script>
 </html>
